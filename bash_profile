@@ -1,0 +1,16 @@
+export PS1="\w\$(git branch 2>/dev/null | grep -e '\* ' | sed 's/^..\(.*\)/ \(\1\)/') \$ ";
+
+shopt -s nocaseglob
+shopt -s histappend
+shopt -s cdspell
+
+for option in autocd globstar; do
+  shopt -s "$option" 2> /dev/null
+done
+
+if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
+  source "$(brew --prefix)/etc/bash_completion"
+fi
+
+[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2 | tr ' ' '\n')" scp sftp ssh
+

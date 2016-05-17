@@ -1,0 +1,12 @@
+[user]
+	name = Douglas Cau
+	email = douglas@cau.se
+	signingkey = 1662DCA8
+[core]
+	editor = vim
+[push]
+	default = simple
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
