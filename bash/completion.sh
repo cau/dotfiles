@@ -6,7 +6,7 @@ for option in autocd globstar; do
   shopt -s "$option" 2> /dev/null
 done
 
-if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
+if which brew &> /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
   source "$(brew --prefix)/etc/bash_completion"
 fi
 
