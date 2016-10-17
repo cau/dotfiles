@@ -14,3 +14,7 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[alias]
+	go = push --force-with-lease
+	amend = commit --amend --no-edit
+	join = merge --no-ff
