@@ -1,6 +1,6 @@
 Host github.com heroku.com
   ControlMaster auto
-  ControlPath ~/.ssh/%r@%h:%p
+  ControlPath ~/.ssh/sessions/%r@%h:%p
   ControlPersist 60m
   ServerAliveInterval 20
 
