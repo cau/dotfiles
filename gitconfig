@@ -16,3 +16,6 @@
 	go = push --force-with-lease
 	amend = commit --amend --no-edit
 	join = merge --no-ff
+[advice]
+	pushNonFastForward = false
+	statusHints = false
