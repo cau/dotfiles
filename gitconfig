@@ -4,6 +4,10 @@
 	signingkey = 1662DCA8
 [core]
 	editor = vim
+[merge]
+    ff = false
+[pull]
+    ff = only
 [push]
 	default = simple
 [tag]
