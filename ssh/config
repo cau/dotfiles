@@ -1,4 +1,4 @@
-Host github.com heroku.com
+Host gitlab.com
   ControlMaster auto
   ControlPath ~/.ssh/sessions/%r@%h:%p
   ControlPersist 60m
