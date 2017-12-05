@@ -1,17 +1,14 @@
 [user]
 	name = Douglas Cau
 	email = douglas@cau.se
-	signingkey = 1662DCA8
 [core]
 	editor = vim
 [merge]
-    ff = false
+	ff = false
 [pull]
-    ff = only
+	ff = only
 [push]
 	default = simple
-[tag]
-	gpgsign = true
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
