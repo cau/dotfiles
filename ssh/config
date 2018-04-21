@@ -1,4 +1,4 @@
-Host github.com gitlab.com
+Host github.com
   ControlMaster auto
   ControlPath ~/.ssh/sessions/%r@%h:%p
   ControlPersist 60m
@@ -10,4 +10,6 @@ Host *
   Compression yes
   ServerAliveInterval 60
   HashKnownHosts yes
+  UseKeychain yes
+  AddKeysToAgent yes
 
