@@ -1,8 +1,12 @@
-Host github.com
+Host github.com gitlab.com
   ControlMaster auto
   ControlPath ~/.ssh/sessions/%r@%h:%p
   ControlPersist 60m
   ServerAliveInterval 20
+
+Host *.liquamine.se
+  User ubuntu
+  CertificateFile ~/.ssh/ec2-eu-north-1.pem
 
 Host *
   Protocol 2
