@@ -6,7 +6,7 @@ Host github.com gitlab.com
 
 Host *.liquamine.se
   User ubuntu
-  CertificateFile ~/.ssh/ec2-eu-north-1.pem
+  CertificateFile ~/.ssh/liquamine-eu-north-1.pem
 
 Host *
   Protocol 2
