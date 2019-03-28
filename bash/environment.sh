@@ -7,4 +7,5 @@ export EDITOR="vim"
 export TERM="xterm-256color"
 
 alias ls="ls -Gp"
+alias wget="wget --hsts-file /dev/null"
 
