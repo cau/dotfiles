@@ -4,10 +4,6 @@ Host github.com gitlab.com
   ControlPersist 60m
   ServerAliveInterval 20
 
-Host *.liquamine.se
-  User ubuntu
-  CertificateFile ~/.ssh/liquamine-eu-north-1.pem
-
 Host *
   Protocol 2
   TCPKeepAlive yes
