@@ -1,0 +1,6 @@
+Host gitlab.com
+  ControlMaster auto
+  ControlPath ~/.ssh/sessions/%r@%h:%p
+  ControlPersist 60m
+  ServerAliveInterval 20
+
