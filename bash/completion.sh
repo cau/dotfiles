@@ -10,4 +10,4 @@ if which brew &> /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; the
   source "$(brew --prefix)/etc/bash_completion"
 fi
 
-[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2 | tr ' ' '\n')" scp sftp ssh
+[ -e "$HOME/.ssh/config.d" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config.d/* | grep -v "[?*]" | cut -d " " -f2 | tr ' ' '\n')" scp sftp ssh
