@@ -5,22 +5,20 @@ function __branch {
 function __repository {
   BRANCH="$(__branch)"
 
-  if [ ! -z "${BRANCH}" ]
-  then
+  if [ ! -z "${BRANCH}" ]; then
+    if [ "${BRANCH}" = "master" ]; then
+      BRANCH_COLOR="\033[31m"
+    else
+      BRANCH_COLOR="\033[33m"
+    fi
 
-  if [ "${BRANCH}" = "master" ]; then
-    BRANCH_COLOR="\033[31m"
-  else
-    BRANCH_COLOR="\033[33m"
-  fi
-
-      echo -e " (${BRANCH_COLOR}${BRANCH}\033[0m)"
+    echo -e " (${BRANCH_COLOR}${BRANCH}\033[0m)"
   fi
 }
 
 function __server {
   if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
-    echo -e "\033[37m`whoami`\033[0m@\033[37m`hostname -s`\033[0m "
+    echo -e "\033[37m`hostname -s`\033[0m "
   fi
 }
 
