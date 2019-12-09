@@ -1,5 +1,9 @@
 aws/credentials
+
+gnupg/*
+
 ssh/config.d
 ssh/id*
 ssh/known_hosts
 
+cache
