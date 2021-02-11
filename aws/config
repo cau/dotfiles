@@ -2,10 +2,3 @@
 region=eu-north-1
 output=json
 
-[profile ds]
-region = eu-north-1
-output = json
-
-[profile ds-dev]
-region = eu-north-1
-output = json
