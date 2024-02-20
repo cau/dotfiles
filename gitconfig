@@ -1,21 +1,30 @@
+[init]
+	defaultBranch = main
 [user]
 	name = Douglas Cau
 	email = douglas@cau.se
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
+[diff]
+	algorithm = histogram
 [merge]
 	ff = false
+	conflictstyle = zdiff3
 [pull]
 	rebase = true
 [push]
-	default = simple
+	default = current
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 [alias]
 	go = push --force-with-lease
 	amend = commit --amend --no-edit
 [advice]
 	pushNonFastForward = false
 	statusHints = false
+[includeIf "gitdir:~/Work/"]
+	path = "~/.gitconfig-work"
