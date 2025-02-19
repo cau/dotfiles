@@ -5,3 +5,4 @@ source ~/.dotfiles/zsh/terminal.sh
 for file in ~/.dotfiles/secrets.d/*.sh; do
   source "$file"
 done
+
