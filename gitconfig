@@ -13,6 +13,8 @@
 	conflictstyle = zdiff3
 [pull]
 	rebase = true
+[rebase]
+	autostash = true
 [push]
 	default = current
 [filter "lfs"]
